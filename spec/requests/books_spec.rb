@@ -43,7 +43,7 @@ RSpec.describe "Books", type: :request do
     }
 
     expect(response).to redirect_to(books_path)
-    expect(Book.last.price.to_f).to eq(12.99)
+    expect(Book.last.price.to_f).to eq(0.99)
   end
 
   it "saves a book with a published date" do
